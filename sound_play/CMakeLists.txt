@@ -24,16 +24,15 @@ set(action_files
   "action/SoundRequest.action"
 )
 
+ament_python_install_package(${PROJECT_NAME})
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
   ${action_files}
   DEPENDENCIES
-    action_msgs
-    audio_common_msgs
-    builtin_interfaces
+  action_msgs
+  audio_common_msgs
+  builtin_interfaces
 )
-
-ament_python_install_package(${PROJECT_NAME})
 
 install(PROGRAMS
   scripts/is_speaking.py
@@ -42,6 +41,7 @@ install(PROGRAMS
   scripts/say.py
   scripts/shutup.py
   scripts/soundplay_node.py
+
   # scripts/test.py
   # scripts/test_actionlib_client.py
   DESTINATION lib/${PROJECT_NAME}

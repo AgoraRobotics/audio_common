@@ -232,7 +232,7 @@ class SoundPlayNode(rclpy.node.Node):
 
         self.builtinsoundparams = {
             SoundRequest.BACKINGUP:
-            (os.path.join(rootdir, 'BACKINGUP.ogg'), 0.1),
+            (os.path.join(rootdir, 'BACKINGUP.ogg'), 1),
             SoundRequest.NEEDS_UNPLUGGING:
             (os.path.join(rootdir, 'NEEDS_UNPLUGGING.ogg'), 1),
             SoundRequest.NEEDS_PLUGGING:
@@ -241,6 +241,8 @@ class SoundPlayNode(rclpy.node.Node):
             (os.path.join(rootdir, 'NEEDS_UNPLUGGING_BADLY.ogg'), 1),
             SoundRequest.NEEDS_PLUGGING_BADLY:
             (os.path.join(rootdir, 'NEEDS_PLUGGING_BADLY.ogg'), 1),
+            SoundRequest.MOVE_BITCH:
+            (os.path.join(rootdir, 'move_bitch.ogg'), 1),
         }
 
         self.no_error = True
