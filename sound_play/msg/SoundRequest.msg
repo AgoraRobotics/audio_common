@@ -8,6 +8,7 @@ int8 NEEDS_UNPLUGGING = 2
 int8 NEEDS_PLUGGING = 3
 int8 NEEDS_UNPLUGGING_BADLY = 4
 int8 NEEDS_PLUGGING_BADLY = 5
+int8 MOVE_BITCH = 9
 
 # Sound identifiers that have special meaning
 int8 ALL = -1 # Only legal with PLAY_STOP
