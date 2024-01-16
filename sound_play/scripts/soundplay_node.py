@@ -243,6 +243,8 @@ class SoundPlayNode(rclpy.node.Node):
             (os.path.join(rootdir, 'NEEDS_PLUGGING_BADLY.ogg'), 1),
             SoundRequest.MOVE_BITCH:
             (os.path.join(rootdir, 'move_bitch.ogg'), 1),
+            SoundRequest.HUMAN_DETECTED:
+            (os.path.join(rootdir, 'HUMAN_DETECTED.ogg'), 1),
         }
 
         self.no_error = True
